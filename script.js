@@ -19,6 +19,19 @@ function addAssToForm() {
     formfield.appendChild(newAss);
 }
 
+function addUnknownAssToForm() {
+    const newAss = document.createElement('div');
+    newAss.setAttribute('class', 'assessment');
+
+    const newWeightField = document.createElement('input');
+    newWeightField.setAttribute('type','number');
+    newWeightField.setAttribute('name','weight');
+    newWeightField.setAttribute('placeholder','30');
+    newAss.appendChild(newWeightField);
+
+    formfield.appendChild(newAss);
+}
+
 function removeAssFromForm() {
     const assessments = formfield.getElementsByClassName('assessment');
 
