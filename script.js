@@ -20,10 +20,10 @@ function addAssToForm() {
 }
 
 function removeAssFromForm() {
-    const input_tags = formfield.getElementsByTagName('input');
+    const assessments = formfield.getElementsByClassName('assessment');
 
-    if (input_tags.length > 2) {
-        formfield.removeChild(input_tags[(input_tags.length) - 1]);
+    if (assessments.length > 1) {
+        formfield.removeChild(assessments[(assessments.length) - 1]);
     } else {
         console.log("there must be at least one assessment per subject");
     }
