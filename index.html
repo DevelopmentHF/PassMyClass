@@ -9,6 +9,32 @@
     <title>Pass My Class - Score Calculator</title>
 </head>
 <body>
-    
+    <h1>Pass My Class</h1>
+
+    <form id="form" method="POST">
+        <!-- final percentage input area -->
+        <div id="final-mark">
+            <label for="final-mark">Enter a final percentage you wish to achieve</label>
+            <input type="number" name="final-mark" id="final-mark" placeholder="50">
+        </div>
+
+        <div id="labels">
+            <h2>Assesment Weight</h2>
+            <h2>Actual/Estimated Score</h2>
+        </div>
+
+        <div id="formfield">
+            <div class="assessment">
+                <input type="number" name="weight" placeholder="30">
+                <input type="number" name="score" placeholder="75">
+            </div>
+        </div>
+        <!-- Submit Button -->
+        <input name="submit" type="Submit" value="Submit">
+    </form>
+    <div class="controls">
+        <button class="add" onclick="addAssToForm()"><i class="plus"></i>Add</button>
+        <button class="remove" onclick="removeAssFromForm()"><i class="minus"></i>Remove</button>
+    </div>
 </body>
 </html>

@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#labels {
+    display: flex;
+    gap: 10rem;
+}
+
+#formfield {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.assessment {
+    display: flex;
+    gap: 10rem;
+}
