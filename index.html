@@ -14,7 +14,7 @@
     <form id="form" method="POST">
         <!-- final percentage input area -->
         <div id="final-mark">
-            <label for="final-mark">Enter a final percentage you wish to achieve</label>
+            <label for="final-mark">Enter a final score you wish to achieve</label>
             <input type="number" name="final-mark" id="final-mark" placeholder="50">
         </div>
 
@@ -24,6 +24,7 @@
         </div>
 
         <div id="formfield">
+            <!--each known assessment has a weight and score associated with it -->
             <div class="assessment">
                 <input type="number" name="weight" placeholder="30">
                 <input type="number" name="score" placeholder="75">
@@ -33,6 +34,8 @@
         <input name="submit" type="Submit" value="Submit">
     </form>
     <div class="controls">
+        <!-- ideally this changes to be a modal and can choose which type to add 
+        if one unknown is already added that option should be greyed out-->
         <button class="add" onclick="addAssToForm()"><i class="plus"></i>Add</button>
         <button class="add" onclick="addUnknownAssToForm()"><i class="plus"></i>Add Unknown Score</button>
         <button class="remove" onclick="removeAssFromForm()"><i class="minus"></i>Remove</button>
